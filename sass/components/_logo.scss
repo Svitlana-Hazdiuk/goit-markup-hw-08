@@ -1,7 +1,6 @@
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -20,4 +19,19 @@
 
 .logo_white-component {
   color: $white-text;
+}
+
+.header-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }

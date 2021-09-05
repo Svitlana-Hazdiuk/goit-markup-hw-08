@@ -1,6 +1,8 @@
-// header {
-//   border-bottom: 1px solid $border-color;
-// }
+@media screen and (min-width: 1200px) {
+  header {
+    border-bottom: 1px solid $border-color;
+  }
+}
 
 .main-nav {
   display: flex;
@@ -67,7 +69,7 @@
   }
 }
 
-.mobole-menu__container {
+.mobile-menu__container {
   position: relative;
 
   height: 100vh;

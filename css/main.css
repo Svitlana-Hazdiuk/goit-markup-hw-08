@@ -55,21 +55,14 @@ img {
 }
 
 .section {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -86,6 +79,7 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -777,32 +771,80 @@ img {
   }
 }
 
-.advant {
-  padding-bottom: 47px;
+@media screen and (min-width: 1200px) {
+  .advant {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
+}
+
+.advant__item {
+  width: 100%;
 }
 
 .advant__list {
-  display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
-.advant__list .advant__item {
-  width: 270px;
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .advant__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
-.advant__list .advant__item + .advant__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .advant__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advant__list .advant__item + .advant__item {
+    margin-left: 30px;
+  }
 }
 
 .advant__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  margin-bottom: 30px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .advant__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advant__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advant__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 4) / 4);
+  }
 }
 
 .advant__title {
@@ -814,13 +856,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advant__description {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: justify;
 }
 
 .section__team {

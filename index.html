@@ -45,7 +45,7 @@
                 +38 096 111 11 11</a></li>
             </ul>
 
-            <button class="burger-btn" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+            <button class="burger-btn" data-menu-open>
                 <svg class="burger-btn-icon">
                     <use href="./images/icons.svg#icon-burger_mobile"></use>
                 </svg>
@@ -213,12 +213,15 @@
 
         <!-- TEAM SECTION -->
 
-        <!-- <section class="section section__team">
+        <section class="section section__team">
             <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="list team__list">
                 <li class="team__member"> 
-                    <img src="./images/img_id.jpg" alt="Игорь Демьяненко" width="270">
+                    <img 
+                    srcset="./images/team-section/team-mobile/img_id.jpg 1x, ./images/team-section/team-mobile/img_id@2x.jpg 2x"
+                    src="./images/team-section/team-mobile/img_id.jpg" 
+                    alt="Игорь Демьяненко">
                 <div class="team__content">
                 <h3 class="team__person">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -256,7 +259,10 @@
                 </li>
 
                 <li class="team__member">
-                    <img src="./images/img_or.jpg" alt="Ольга Репина" width="270">
+                    <img 
+                    srcset="./images/team-section/team-mobile/img_or.jpg 1x, ./images/team-section/team-mobile/img_or@2x.jpg 2x"
+                    src="./images/team-section/team-mobile/img_or.jpg"
+                     alt="Ольга Репина">
                 <div class="team__content">
                 <h3 class="team__person">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -294,7 +300,10 @@
                 </li>
 
                 <li class="team__member">
-                    <img src="./images/img_nt.jpg" alt="Николай Тарасов" width="270">
+                    <img 
+                    srcset="./images/team-section/team-mobile/img_nt.jpg 1x, ./images/team-section/team-mobile/img_nt@2x.jpg 2x"
+                    src="./images/team-section/team-mobile/img_nt.jpg" 
+                    alt="Николай Тарасов">
                 <div class="team__content">
                 <h3 class="team__person">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p> 
@@ -332,7 +341,10 @@
                 </li>
 
                 <li class="team__member">
-                    <img src="./images/img_me.jpg" alt="Михаил Ермаков" width="270">
+                    <img 
+                    srcset="./images/team-section/team-mobile/img_me.jpg 1x, ./images/team-section/team-mobile/img_me@2x.jpg 2x"
+                    src="./images/team-section/team-mobile/img_me.jpg" 
+                    alt="Михаил Ермаков">
                 <div class="team__content">
                 <h3 class="team__person">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -371,11 +383,11 @@
             </ul>
             </div>
                         
-        </section> -->
+        </section>
 
         <!-- CLIENTS SECTION -->
 
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
 
@@ -424,14 +436,14 @@
                 </ul>
 
             </div>
-        </section>     -->
+        </section>    
 
 
     </main>
 
     <!-- FOOTER SECTION -->
 
-<!-- <footer class="footer-block">
+<footer class="footer-block">
     <div class="footer-content container ">
     <div class="address-block">
         <a href="/" class="logo footer-sign"> <span class="logo_blue-component">Web</span><span
@@ -491,9 +503,9 @@
   </div>
     </div>
 
-</footer>  -->
+</footer> 
 
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="icon-close" width="18" height="18">
@@ -551,7 +563,7 @@
     </div>
 </div>
 
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -1,8 +1,17 @@
 .button-list {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button-filter {
@@ -40,6 +49,8 @@
   color: $white-text;
 }
 
-.filter-item + .filter-item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .filter-item + .filter-item {
+    margin-left: 8px;
+  }
 }

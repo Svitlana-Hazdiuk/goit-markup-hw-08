@@ -7,6 +7,8 @@
     display: flex;
     text-align: center;
     flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
 
     margin-left: calc(-1 * #{$set-gap});
     margin-top: calc(-1 * #{$set-gap});
@@ -27,9 +29,10 @@
 }
 
 .team__list .team__member {
-  margin-top: $set-gap;
-  margin-left: $set-gap;
   @media screen and (min-width: 768px) {
+    margin-top: $set-gap;
+    margin-left: $set-gap;
+
     flex-basis: calc(100% / 2 - #{$set-gap});
   }
   @media screen and (min-width: 1200px) {
@@ -37,10 +40,10 @@
   }
 }
 
-// .team__member .img {
-//   width: 100%;
-//   object-fit: cover;
-// }
+.team__member .img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .team__content {
   padding: 30px 32px;

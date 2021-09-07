@@ -9,7 +9,9 @@
 }
 
 .exm-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -25,12 +27,15 @@
   border: 1px solid $border-color;
   border-top: 0;
   cursor: pointer;
+  align-items: stretch;
 
   & .item-descript {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+
+    flex-grow: 1;
   }
 }
 

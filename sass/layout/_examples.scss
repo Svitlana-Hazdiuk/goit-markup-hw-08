@@ -40,10 +40,9 @@
 }
 
 .examples-set > .exm-item {
-  margin-left: $set-gap;
-  margin-top: $set-gap;
-
   @media screen and (min-width: 678px) {
+    margin-left: $set-gap;
+    margin-top: $set-gap;
     flex-basis: calc(100% / 2 - #{$set-gap});
   }
 

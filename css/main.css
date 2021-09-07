@@ -252,14 +252,18 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-nav .item:not(:last-child) {
     margin-bottom: 10px;
+  }
+  .item.mail {
+    padding-top: 21px;
+  }
+  .item.phone {
+    padding-bottom: 21px;
   }
 }
 
@@ -1147,13 +1151,10 @@ header {
   flex-grow: 1;
 }
 
-.examples-set > .exm-item {
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
 @media screen and (min-width: 678px) {
   .examples-set > .exm-item {
+    margin-left: 30px;
+    margin-top: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 }
